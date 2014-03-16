@@ -1,5 +1,10 @@
 package com.facility.model.facility;
 
+import java.util.List;
+
+import com.facility.model.businessunit.BusinessUnit;
+import com.facility.model.maintenance.Maintenance;
+
 public  class FacilityImp implements Facility {
 	 private String id;
 	 private String name;
@@ -8,6 +13,8 @@ public  class FacilityImp implements Facility {
 	 private String date;
 	 private FacilityDetails facilityDetails;
 	 private FacilityUse facilityUse;
+	 private List<Maintenance> maintenances;
+	 private List<BusinessUnit> businessunits;
 	 
 	 public FacilityImp(){
 	 }
@@ -61,6 +68,15 @@ public  class FacilityImp implements Facility {
 	}
 	public void setFacilityUse(FacilityUse facilityUse) {
 		this.facilityUse = facilityUse;
+	}
+	
+	public void addMaintenance(Maintenance maintenance) {
+		maintenances.add(maintenance);// TODO Auto-generated method stub
+		
+	}
+	public void addBusinessUnit(BusinessUnit businessunit) {
+		businessunits.add(businessunit);// TODO Auto-generated method stub
+		
 	}
 	
 	}

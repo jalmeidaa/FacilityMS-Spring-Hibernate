@@ -1,12 +1,14 @@
 package com.facility.model.businessunit;
 
+import java.util.List;
+
 
 public class BusinessUnitImp implements BusinessUnit {
 	private String businessunit_id;
 	private String name;
 	private String availability;
-	private String status;
-	private BusinessUnitDetails businessunitdetails;
+	private String status = "Open";
+	private List<BusinessUnitDetails> businessunitDetails;
 	
 	
 	public BusinessUnitImp(){
@@ -45,12 +47,28 @@ public class BusinessUnitImp implements BusinessUnit {
 		this.status = status;
 	}
 
-	public BusinessUnitDetails getBusinessunitdetails() {
-		return businessunitdetails;
+	public List<BusinessUnitDetails> getBusinessunitdetails() {
+		return businessunitDetails;
 	}
 
-	public void setBusinessunitdetails(BusinessUnitDetails businessunitdetails) {
-		this.businessunitdetails = businessunitdetails;
+	public void setBusinessunitdetails(List<BusinessUnitDetails> businessunitDetails) {
+		this.businessunitDetails = businessunitDetails;
+	}
+
+	public void addUnit(BusinessUnitDetails businessunitDetail) {
+		if(status.equals("Open")){
+			businessunitDetails.add(businessunitDetail);// TODO Auto-generated method stub
+		}else {
+			throw new IllegalStateException("Can only add Unit in Open state.");
+		}
+	}
+
+	public void removeUnit() {
+	if(status.equals("Close")){
+		status = "Close";
+	}else {
+		throw new IllegalStateException("Unit cannot be removed.");
+	}
 	}
 	
 

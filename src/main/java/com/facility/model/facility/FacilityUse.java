@@ -2,6 +2,8 @@ package com.facility.model.facility;
 
 
 public interface FacilityUse {
+	  public String getId();
+	   public void setId(String id);
 		public String getFaciuseID();
 		public void setFaciuseID(String faciuse_id);
 		public String getPrice();
@@ -12,5 +14,6 @@ public interface FacilityUse {
 		public void setEnddate(String end_date);
 		public String getNote();
 		public void setNote(String note);
+		
 		
 }

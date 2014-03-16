@@ -3,6 +3,7 @@ package com.facility.model.facility;
 
 
 public class FacilityUseImp implements FacilityUse {
+	private String id;
 	private String faciuse_id;	
 	private String price;
 	private String str_date;
@@ -51,5 +52,14 @@ public class FacilityUseImp implements FacilityUse {
 
 	public void setNote(String note) {
 		this.note = note;
+	}
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+		
 	}
 }

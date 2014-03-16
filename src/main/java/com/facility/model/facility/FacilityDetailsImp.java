@@ -1,6 +1,7 @@
 package com.facility.model.facility;
 
 public class FacilityDetailsImp implements FacilityDetails {
+		private String id;
 		private String facidetail_id;
 		private String description;
 		private String note;
@@ -31,6 +32,13 @@ public class FacilityDetailsImp implements FacilityDetails {
 
 	public void setNote(String note) {
 		this.note = note;
+	}
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;// TODO Auto-generated method stub
+		
 	}
 	
 

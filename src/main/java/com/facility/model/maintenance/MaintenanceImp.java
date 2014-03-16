@@ -1,5 +1,6 @@
 package com.facility.model.maintenance;
 
+import java.util.List;
 
 
 public class MaintenanceImp implements Maintenance {
@@ -7,10 +8,10 @@ public class MaintenanceImp implements Maintenance {
 	private String cost;
 	private String strt_date;
 	private String end_date;
-	private String status;
+	private String status = "Open";
 	private String note;
-	private MaintenanceOrder maintenanceorder;
-	private MaintenanceRequest maintenancerequest;
+	private List<MaintenanceOrder> maintenanceOrders;
+	private List<MaintenanceRequest> maintenanceRequests;
 
 	public MaintenanceImp(){	
 	}
@@ -64,20 +65,46 @@ public class MaintenanceImp implements Maintenance {
 		this.note = note;
 	}
 
-	public MaintenanceOrder getMaintenanceorder() {
-		return maintenanceorder;
+	public List<MaintenanceOrder> getMaintenanceorder() {
+		return maintenanceOrders;
 	}
 
-	public void setMaintenance(MaintenanceOrder maintenanceorder) {
-		this.maintenanceorder = maintenanceorder;
+	public void setMaintenance(List<MaintenanceOrder> maintenanceOrders) {
+		this.maintenanceOrders = maintenanceOrders;
 	}
 
-	public MaintenanceRequest getMaintenancerequest() {
-		return maintenancerequest;
+	public List<MaintenanceRequest> getMaintenancerequest() {
+		return maintenanceRequests;
 	}
 
-	public void setMaintenancerequest(MaintenanceRequest maintenancerequest) {
-		this.maintenancerequest = maintenancerequest;
+	public void setMaintenancerequest(List<MaintenanceRequest> maintenanceRequests) {
+		this.maintenanceRequests = maintenanceRequests;
+	}
+
+	public void addMaintReq(MaintenanceRequest maintenancerequest) {
+		if(status.equals("Open")){
+			maintenanceRequests.add(maintenancerequest);// TODO Auto-generated method stub
+		}
+		else {
+			throw new IllegalStateException("Can only add request in Open status.");
+		}
+	}
+
+	public void orderMaint() {
+		if(status.equals("Ordered")){
+			status = "Ordered";// TODO Auto-generated method stub
+		}else {
+			throw new IllegalStateException("Cannot  order in this status.");
+		}
+	}
+
+	public void statusMaint() {
+		if(status.equals("Close")){
+			status = "Complete";// TODO Auto-generated method stub
+		}else {
+			throw new IllegalStateException("Incomplete Order");
+		}
+		
 	}
 
 }
