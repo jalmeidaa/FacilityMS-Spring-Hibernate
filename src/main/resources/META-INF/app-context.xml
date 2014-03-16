@@ -16,19 +16,19 @@
 	<bean id="maintenanceRequests" class="com.facility.model.maintenance.MaintenanceRequestImp" scope="prototype"/>
 	
 	<bean id="maintenances" class="com.facility.model.maintenance.MaintenanceImp" scope="prototype">
-	<property name = "maintenanceOrders"/>
-	<property name= "maintenanceRequests"/>
+	<property name = "maintenanceOrders" ref= "maintenanceOrders"/>
+	<property name= "maintenanceRequests" ref= "maintenanceRequests"/>
 	</bean>
 	
 	<bean id="businessunits" class="com.facility.model.businessunit.BusinessUnitImp" scope="prototype">
-	<property name = "businessunitDetails"/>
+	<property name = "businessunitDetails" ref="businessunitDetails"/>
 	</bean>
 		
 	<bean id="facility" class="com.facility.model.facility.FacilityImp" scope="prototype">
 		<property name = "facilityDetails" ref="facilityDetails"/>
 		<property name = "facilityUse" ref="facilityUse"/>
-		<property name = "maintenances"/>
-		<property name = "businessunits"/>
+		<property name = "maintenances" ref="maintenances"/>
+		<property name = "businessunits" ref="businessunits"/>
 		
 	</bean>
 
