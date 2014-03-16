@@ -15,12 +15,12 @@
 	<bean id="maintenanceOrders" class="com.facility.model.maintenance.MaintenanceOrderImp" scope="prototype"/>
 	<bean id="maintenanceRequests" class="com.facility.model.maintenance.MaintenanceRequestImp" scope="prototype"/>
 	
-	<bean id="maintenance" class="com.facility.model.maintenance.MaintenanceImp" scope="prototype">
+	<bean id="maintenances" class="com.facility.model.maintenance.MaintenanceImp" scope="prototype">
 	<property name = "maintenanceOrders"/>
 	<property name= "maintenanceRequests"/>
 	</bean>
 	
-	<bean id="businessunit" class="com.facility.model.businessunit.BusinessUnitImp" scope="prototype">
+	<bean id="businessunits" class="com.facility.model.businessunit.BusinessUnitImp" scope="prototype">
 	<property name = "businessunitDetails"/>
 	</bean>
 		
