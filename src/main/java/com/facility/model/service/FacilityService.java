@@ -6,7 +6,7 @@ import com.facility.dao.FacilityHibernateDAO;
 
 public class FacilityService {
 	//private Facility facility;
-	private FacilityHibernateDAO custDAO = new FacilityHibernateDAO();
+	private FacilityHibernateDAO facDAO = new FacilityHibernateDAO();
 	/**
 	public void setFacility(Facility facility) {
 		this.facility = facility;

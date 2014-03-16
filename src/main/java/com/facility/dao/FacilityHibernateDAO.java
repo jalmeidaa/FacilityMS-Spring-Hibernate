@@ -6,8 +6,6 @@ import org.hibernate.Session;
 
 import com.facility.model.facility.Facility;
 
-
-
 public class FacilityHibernateDAO {
 
 	public void addFacility(Facility fac){
@@ -19,7 +17,7 @@ public class FacilityHibernateDAO {
 	}
 	public void deleteFacility(Facility fac) {
 		System.out.println("*************** Deleteing faciltiy information in DB with ID ...  " + fac.getId());
-		Session session = HibernatMySQLHelper.getSessionFactory().getCurrentSession();
+		Session session = HibernateMYSQLHelper.getSessionFactory().getCurrentSession();
 		session.beginTransaction();
 		session.delete(fac);
 		session.getTransaction().commit();

@@ -29,8 +29,7 @@
 		<property name = "facilityUse" ref="facilityUse"/>
 		<property name = "maintenances" ref="maintenances"/>
 		<property name = "businessunits" ref="businessunits"/>
-		
-	</bean>
+		</bean>
 
 	<bean id="facilityService" class="com.facility.model.service.FacilityService" scope="prototype">
 			
