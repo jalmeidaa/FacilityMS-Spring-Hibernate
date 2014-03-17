@@ -30,7 +30,7 @@ public class FacilityHibernateDAO {
 		
 		//System.out.println("*************** Hibernate session is created ..................\n" + session.toString());
 		
-		//Query getFacQuery = session.createQuery("From FacilityImpl ");
+		//Query getFacQuery = session.createQuery("From FacilityImp ");
 		Query getFacQuery = session.createQuery("From FacilityImp where Id=:Id");		
 		getFacQuery.setString("Id", Id);
 		
