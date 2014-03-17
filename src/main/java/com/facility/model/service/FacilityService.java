@@ -34,4 +34,15 @@ public class FacilityService {
 	      System.err.println(se.getMessage());
 	    }
 }
+	public Facility findFacilityById(String Id) {
+		
+		try {
+			Facility facility = facDAO.retrieveFacility(Id);
+	    	return facility;
+	    } catch (Exception se) {
+	      System.err.println("FacilityService: Threw a Exception retrieving facility.");
+	      System.err.println(se.getMessage());
+	    }
+		return null;
+	}
 }

@@ -22,4 +22,28 @@ public class FacilityHibernateDAO {
 		session.delete(fac);
 		session.getTransaction().commit();
 	}
+	public Facility retrieveFacility(String Id) {
+		try {
+		System.out.println("*************** Searcing for customer information with ID ...  " + Id);
+		Session session = HibernateMYSQLHelper.getSessionFactory().getCurrentSession();
+		session.beginTransaction();
+		
+		//System.out.println("*************** Hibernate session is created ..................\n" + session.toString());
+		
+		//Query getFacQuery = session.createQuery("From FacilityImpl ");
+		Query getFacQuery = session.createQuery("From FacilityImp where Id=:Id");		
+		getFacQuery.setString("Id", Id);
+		
+		System.out.println("*************** Retrieve Query is ....>>\n" + getFacQuery.toString()); 
+		
+		List facilitys= getFacQuery.list();
+		System.out.println("Getting Facility Details using HQL. \n" + facilitys);
+
+		session.getTransaction().commit();
+		return (Facility)facilitys.get(0);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
 	}

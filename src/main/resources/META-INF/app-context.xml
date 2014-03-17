@@ -9,29 +9,30 @@
 
 	<context:component-scan base-package="com.facility" />
 	
-	<bean id="facilityDetails" class="com.facility.model.FacilityDetailsImp" scope="prototype"/>
-	<bean id= "facilityUse" class="com.facility.model.FacilityUseImp" scope="prototype"/>
+	<bean id="facilityDetails" class="com.facility.model.facility.FacilityDetailsImp" scope="prototype"/>
+	<bean id= "facilityUse" class="com.facility.model.facility.FacilityUseImp" scope="prototype"/>
+	<!-- 
 	<bean id="businessunitDetails" class="com.facility.model.businessunit.BusinessUnitDetailsImp" scope="prototype"/>
 	<bean id="maintenanceOrders" class="com.facility.model.maintenance.MaintenanceOrderImp" scope="prototype"/>
 	<bean id="maintenanceRequests" class="com.facility.model.maintenance.MaintenanceRequestImp" scope="prototype"/>
-	
+	 
 	<bean id="maintenances" class="com.facility.model.maintenance.MaintenanceImp" scope="prototype">
 	<property name = "maintenanceOrders" ref= "maintenanceOrders"/>
 	<property name= "maintenanceRequests" ref= "maintenanceRequests"/>
 	</bean>
 	
-	<bean id="businessunits" class="com.facility.model.businessunit.BusinessUnitImp" scope="prototype">
+	 <bean id="businessunits" class="com.facility.model.businessunit.BusinessUnitImp" scope="prototype">
 	<property name = "businessunitDetails" ref="businessunitDetails"/>
 	</bean>
-		
+	-->	
 	<bean id="facility" class="com.facility.model.facility.FacilityImp" scope="prototype">
 		<property name = "facilityDetails" ref="facilityDetails"/>
 		<property name = "facilityUse" ref="facilityUse"/>
-		<property name = "maintenances" ref="maintenances"/>
+		<!-- <property name = "maintenances" ref="maintenances"/>
 		<property name = "businessunits" ref="businessunits"/>
+		-->
 		</bean>
 
 	<bean id="facilityService" class="com.facility.model.service.FacilityService" scope="prototype">
-			
-	</bean>
+				</bean>
 	</beans>

@@ -71,11 +71,11 @@ public  class FacilityImp implements Facility {
 	}
 	
 	public void addMaintenance(Maintenance maintenance) {
-		maintenances.add(maintenance);// TODO Auto-generated method stub
+		maintenances.add(maintenance);
 		
 	}
 	public void addBusinessUnit(BusinessUnit businessunit) {
-		businessunits.add(businessunit);// TODO Auto-generated method stub
+		businessunits.add(businessunit);
 		
 	}
 	
