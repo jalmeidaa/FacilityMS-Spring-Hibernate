@@ -10,7 +10,7 @@
 		<property name="address" type="string" column="ADDRESS"/>
 		<property name="contact" type="string" column="CONTACT"/>
 		<property name="date" type="string" column="BUILD_DATE"/>
-		<one-to-one name="facilityDetails" class="com.facility.model.customer.FacilityDetailsImp" cascade="save-update, delete"></one-to-one>
-		<one-to-one name="facilityUse" class="com.facility.model.customer.FacilityUseImp" cascade="save-update, delete"></one-to-one>
+		<one-to-one name="facilityDetails" class="com.facility.model.facility.FacilityDetailsImp" cascade="save-update, delete"></one-to-one>
+		<one-to-one name="facilityUse" class="com.facility.model.facility.FacilityUseImp" cascade="save-update, delete"></one-to-one>
 		</class>
 </hibernate-mapping>

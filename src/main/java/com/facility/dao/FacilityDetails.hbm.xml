@@ -4,9 +4,11 @@
 "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping package="com.facility.model.facility">
-<class name="FacilityDetailsImp" table="facilitydetails">
-		<id name="Id" column="FACILITY_ID"/>
-		<property name="fdetailid" type="string" column="FACILITY_DETAILS_ID"/>
+<class name="FacilityDetailsImp" table="facility_details">
+		<id name="Id" column="id"/>
+	
+		<property name="fdetail_id" type="string" column="FACILITY_DETAILS_ID"/>
+	
 		<property name="description" type="string" column="	DESCRIPTION"/>
 		<property name="note" type="string" column="NOTE"/>	
 	</class>

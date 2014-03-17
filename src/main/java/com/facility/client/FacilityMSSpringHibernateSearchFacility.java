@@ -27,7 +27,7 @@ public class FacilityMSSpringHibernateSearchFacility {
         
         FacilityDetails facDetails = searchedFacility.getFacilityDetails();
         //FacilityDetails facDetails = facilityService.findFacilityDetails(searchedFacility.getId());
-        System.out.println("\tFacility Details:\t" + facDetails.getFdetailId() + 
+        System.out.println("\tFacility Details:\t" + facDetails.getFdetail_id() + "\n\t\t\t\t" + facDetails.getDescription() + 
         		"\n\t\t\t\t" + facDetails.getNote() +	"\n");  
       
 }

@@ -30,16 +30,16 @@ public static void main (String args[]) throws Exception {
         //Spring to inject the right object implementation
         FacilityDetails facilityDetails = facility.getFacilityDetails();
         facilityDetails.setId(facility.getId());
-        facilityDetails.setFdetailId("LUC123");
+        facilityDetails.setFdetail_id("LUC123");
         facilityDetails.setDescription("University");
         facilityDetails.setNote("Private");
         
         FacilityUse facilityUse = facility.getFacilityUse();
         facilityUse.setId(facility.getId());
-        facilityUse.setFaciuseID("LUC009");
+        facilityUse.setFaciuse_id("LUC009");
         facilityUse.setPrice("800");
-        facilityUse.setStrtdate("August");
-        facilityUse.setEnddate("September");
+        facilityUse.setStr_date("August");
+        facilityUse.setEnd_date("September");
         facilityUse.setNote("Contact Office");
                      
         System.out.println("*************** Saving Facility ***********************");

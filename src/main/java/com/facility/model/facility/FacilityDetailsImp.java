@@ -2,19 +2,19 @@ package com.facility.model.facility;
 
 public class FacilityDetailsImp implements FacilityDetails {
 		private String id;
-		private String fdetailid;
+		private String fdetail_id;
 		private String description;
 		private String note;
 		
 		public FacilityDetailsImp(){
-			
-		}
-	public String getFdetailId() {
-		return fdetailid;
+		}	
+
+	public String getFdetail_id() {
+		return fdetail_id;
 	}
 
-	public void setFdetailId(String fdetailid) {
-		this.fdetailid = fdetailid;
+	public void setFdetail_id(String fdetail_id) {
+		this.fdetail_id = fdetail_id;
 		
 	}
 	public String getDescription() {
@@ -37,7 +37,7 @@ public class FacilityDetailsImp implements FacilityDetails {
 		return id;
 	}
 	public void setId(String id) {
-		this.id = id;// TODO Auto-generated method stub
+		this.id = id;
 		
 	}
 	

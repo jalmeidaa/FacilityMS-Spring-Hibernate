@@ -1,7 +1,7 @@
 package com.facility.model.service;
 
-import com.facility.model.facility.Facility;
 import com.facility.dao.FacilityHibernateDAO;
+import com.facility.model.facility.Facility;
 
 
 public class FacilityService {

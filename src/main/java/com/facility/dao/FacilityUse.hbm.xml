@@ -4,7 +4,7 @@
 "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping package="com.facility.model.facility">
-	<class name="FacilityUseImp" table="facilityuse">
+	<class name="FacilityUseImp" table="facility_use">
 		<id name="Id" column="FACILITY_ID"/>
 		<property name="faciuse_id" type="string" column="FACILITY_USE_ID"/>
 		<property name="price" type="string" column="PRICE"/>
