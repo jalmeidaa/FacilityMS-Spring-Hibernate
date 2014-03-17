@@ -21,7 +21,7 @@ public class FacilityMSSpringHibernateSearchFacility {
         System.out.println("*************** SEARCH EXAMPLE *************************");
  
         //Find a facility if already exists; if not, create a new one.
-        Facility searchedFacility = facilityService.findFacilityById("002"); 
+        Facility searchedFacility = facilityService.findFacilityById("001"); 
         System.out.println("Searched customer information .......>>");
         System.out.println("\tName: \t\t\t" + searchedFacility.getName() + " " + searchedFacility.getAddress() + " " + searchedFacility.getContact() +" " + searchedFacility.getDate() + "\n");
         
