@@ -7,7 +7,7 @@ import com.facility.model.maintenance.Maintenance;
 
 public interface Facility {
 	public String getId();
-	public void setId(String id);
+	public void setId(String Id);
 	public String getName();
 	public void setName(String name);
 	public String getAddress();

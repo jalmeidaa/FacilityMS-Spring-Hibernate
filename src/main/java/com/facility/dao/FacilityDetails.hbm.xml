@@ -5,7 +5,7 @@
 
 <hibernate-mapping package="com.facility.model.facility">
 <class name="FacilityDetailsImp" table="facility_details">
-		<id name="Id" column="id"/>
+		<id name="Id" column="FACILITY_ID"/>
 	
 		<property name="fdetail_id" type="string" column="FACILITY_DETAILS_ID"/>
 	

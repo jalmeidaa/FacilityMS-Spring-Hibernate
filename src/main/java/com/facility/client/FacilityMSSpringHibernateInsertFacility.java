@@ -21,7 +21,7 @@ public static void main (String args[]) throws Exception {
         
         System.out.println("*************** Instantiating Facility ***********************");
         Facility facility = (Facility) context.getBean("facility");
-		facility.setId("001");
+		facility.setId("002");
         facility.setName("Loyola");
         facility.setAddress("Chicago");
         facility.setContact("312-123-4765");
@@ -30,13 +30,13 @@ public static void main (String args[]) throws Exception {
         //Spring to inject the right object implementation
         FacilityDetails facilityDetails = facility.getFacilityDetails();
         facilityDetails.setId(facility.getId());
-        facilityDetails.setFdetail_id("123");
+        facilityDetails.setFdetail_id("124");
         facilityDetails.setDescription("University");
         facilityDetails.setNote("Private");
         
         FacilityUse facilityUse = facility.getFacilityUse();
         facilityUse.setId(facility.getId());
-        facilityUse.setFaciuse_id("009");
+        facilityUse.setFaciuse_id("006");
         facilityUse.setPrice("800");
         facilityUse.setStr_date("2013-8-12");
         facilityUse.setEnd_date("2014-7-12");

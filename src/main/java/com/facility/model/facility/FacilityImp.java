@@ -6,7 +6,7 @@ import com.facility.model.businessunit.BusinessUnit;
 import com.facility.model.maintenance.Maintenance;
 
 public  class FacilityImp implements Facility {
-	 private String id;
+	 private String Id;
 	 private String name;
 	 private String address;
 	 private String contact;
@@ -19,7 +19,7 @@ public  class FacilityImp implements Facility {
 	 public FacilityImp(){
 	 }
 	 public String getId() {
-		 return id;
+		 return Id;
 		}
 	
 	public String getName() {
@@ -37,8 +37,8 @@ public  class FacilityImp implements Facility {
 		return date;
 		}
 	
-	public void setId(String id) {
-		this.id = id;
+	public void setId(String Id) {
+		this.Id = Id;
 		
 	}
 	public void setName(String name) {

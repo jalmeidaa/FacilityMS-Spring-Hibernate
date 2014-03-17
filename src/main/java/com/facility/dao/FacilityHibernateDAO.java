@@ -28,7 +28,7 @@ public class FacilityHibernateDAO {
 		Session session = HibernateMYSQLHelper.getSessionFactory().getCurrentSession();
 		session.beginTransaction();
 		
-		//System.out.println("*************** Hibernate session is created ..................\n" + session.toString());
+		System.out.println("*************** Hibernate session is created ..................\n" + session.toString());
 		
 		//Query getFacQuery = session.createQuery("From FacilityImp ");
 		Query getFacQuery = session.createQuery("From FacilityImp where Id=:Id");		

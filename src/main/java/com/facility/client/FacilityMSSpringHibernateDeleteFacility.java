@@ -23,11 +23,11 @@ public class FacilityMSSpringHibernateDeleteFacility {
 		//Find a facility if already exists; if not, create a new one.
 		Facility searchedFacility = facilityService.findFacilityById("001"); 
 		System.out.println("*************** Facility to be deleted *************************");
-		System.out.println("\tName: \t\t\t" + searchedFacility.getName() + " " + searchedFacility.getAddress() + "\n");
+		System.out.println("\tName: \t\t\t" + searchedFacility.getName() + " " + searchedFacility.getAddress() + " " + searchedFacility.getContact() +" " + searchedFacility.getDate() + "\n");
         
         FacilityDetails facDetails = searchedFacility.getFacilityDetails();
         //FacilityDetails facDetails = facilityService.findFacilityDetails(searchedFacility.getId());
-        System.out.println("\tFacility Details:\t" + facDetails.getDescription() + 
+        System.out.println("\tFacility Details:\t" + facDetails.getFdetail_id() +"\n\t\t\t\t" + facDetails.getDescription() + 
         		"\n\t\t\t\t" + facDetails.getNote() +	"\n");
         
         System.out.println("*************** Facility to be deleted *************************");
