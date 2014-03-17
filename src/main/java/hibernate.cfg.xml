@@ -21,7 +21,8 @@
  		<!-- Enable Hibernate's automatic session context management -->
  		<property name="current_session_context_class">thread</property>
 		<!-- Mapping resource configuration files -->
- 		<mapping resource="com/facility/dao/Facility.hbm.xml"/> 
- 				 
+ 		<mapping resource="com/facility/dao/Facility.hbm.xml"/>
+ 		<mapping resource="com/facility/dao/FacilityDetails.hbm.xml"/> 
+ 		<mapping resource="com/facility/dao/FacilityUse.hbm.xml"/> 		 
  	</session-factory>
  </hibernate-configuration>

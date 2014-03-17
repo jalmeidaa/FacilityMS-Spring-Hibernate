@@ -47,11 +47,11 @@ public class BusinessUnitImp implements BusinessUnit {
 		this.status = status;
 	}
 
-	public List<BusinessUnitDetails> getBusinessunitdetails() {
+	public List<BusinessUnitDetails> getBusinessunitDetails() {
 		return businessunitDetails;
 	}
 
-	public void setBusinessunitdetails(List<BusinessUnitDetails> businessunitDetails) {
+	public void setBusinessunitDetails(List<BusinessUnitDetails> businessunitdDetails) {
 		this.businessunitDetails = businessunitDetails;
 	}
 
@@ -69,8 +69,5 @@ public class BusinessUnitImp implements BusinessUnit {
 	}else {
 		throw new IllegalStateException("Unit cannot be removed.");
 	}
-	}
-	
-
-	
+	}	
 }

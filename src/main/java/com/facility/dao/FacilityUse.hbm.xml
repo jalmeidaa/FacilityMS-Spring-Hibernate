@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.facility.model.facility">
+	<class name="FacilityUseImp" table="facilityuse">
+		<id name="Id" column="FACILITY_ID"/>
+		<property name="faciuse_id" type="string" column="FACILITY_USE_ID"/>
+		<property name="price" type="string" column="PRICE"/>
+		<property name="str_date" type="string" column="START_DATE"/>
+		<property name="end_date" type="string" column="END_DATE"/>
+		<property name="note" type="string" column="NOTE"/>	
+	</class>
+</hibernate-mapping>

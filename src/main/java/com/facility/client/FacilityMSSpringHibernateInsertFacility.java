@@ -9,7 +9,6 @@ import com.facility.model.facility.FacilityUse;
 import com.facility.model.service.FacilityService;
 
 
-
 public class FacilityMSSpringHibernateInsertFacility {
 public static void main (String args[]) throws Exception {
 		
@@ -28,10 +27,10 @@ public static void main (String args[]) throws Exception {
         facility.setContact("312-123-4765");
         facility.setDate("1870");
         
-        //Spring to inject the right object implementation in Customer object for BillingAddress using Setter Injection
+        //Spring to inject the right object implementation
         FacilityDetails facilityDetails = facility.getFacilityDetails();
         facilityDetails.setId(facility.getId());
-        facilityDetails.setFdetailID("LUC123");
+        facilityDetails.setFdetailId("LUC123");
         facilityDetails.setDescription("University");
         facilityDetails.setNote("Private");
         

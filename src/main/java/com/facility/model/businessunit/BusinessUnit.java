@@ -11,8 +11,8 @@ public interface BusinessUnit {
    public void setAvailability(String availability);
    public String getStatus();
    public void setStatus(String status);
-   public List<BusinessUnitDetails> getBusinessunitdetails();
-   public void setBusinessunitdetails(List<BusinessUnitDetails> businessunitDetails);
+   public List<BusinessUnitDetails> getBusinessunitDetails();
+   public void setBusinessunitDetails(List<BusinessUnitDetails> businessunitDetails);
    public void addUnit(BusinessUnitDetails businessunitDetail);
    public void removeUnit();
 }

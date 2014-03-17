@@ -22,5 +22,8 @@ public interface Facility {
 	public void setFacilityUse(FacilityUse facilityUse);
 	public void addMaintenance(Maintenance maintenance);
 	public void addBusinessUnit(BusinessUnit businessunit);
-		
+	public List<Maintenance> getMaintenances();
+	public void setMaintenances(List<Maintenance> maintenances);
+	public List<BusinessUnit> getBusinessunits();
+	public void setBusinessunits(List<BusinessUnit> businessunits);
 }

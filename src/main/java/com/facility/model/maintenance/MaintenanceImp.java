@@ -65,19 +65,19 @@ public class MaintenanceImp implements Maintenance {
 		this.note = note;
 	}
 
-	public List<MaintenanceOrder> getMaintenanceorder() {
+	public List<MaintenanceOrder> getMaintenanceOrders() {
 		return maintenanceOrders;
 	}
 
-	public void setMaintenance(List<MaintenanceOrder> maintenanceOrders) {
+	public void setMaintenanceOrders(List<MaintenanceOrder> maintenanceOrders) {
 		this.maintenanceOrders = maintenanceOrders;
 	}
 
-	public List<MaintenanceRequest> getMaintenancerequest() {
+	public List<MaintenanceRequest> getMaintenanceRequests() {
 		return maintenanceRequests;
 	}
 
-	public void setMaintenancerequest(List<MaintenanceRequest> maintenanceRequests) {
+	public void setMaintenanceRequests(List<MaintenanceRequest> maintenanceRequests) {
 		this.maintenanceRequests = maintenanceRequests;
 	}
 

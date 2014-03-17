@@ -15,10 +15,10 @@ public interface Maintenance {
 	public void setStatus(String status);
 	public String getNote(); 
 	public void setNote(String note);
-	public List<MaintenanceOrder> getMaintenanceorder();
-	public void setMaintenance(List<MaintenanceOrder> maintenanceOrders);
-	public List<MaintenanceRequest> getMaintenancerequest();
-	public void setMaintenancerequest(List<MaintenanceRequest> maintenanceRequests);
+	public List<MaintenanceOrder> getMaintenanceOrders();
+	public void setMaintenanceOrders(List<MaintenanceOrder> maintenanceOrders);
+	public List<MaintenanceRequest> getMaintenanceRequests();
+	public void setMaintenanceRequests(List<MaintenanceRequest> maintenanceRequests);
 	public void addMaintReq(MaintenanceRequest maintenancerequest);
 	public void orderMaint();
 	public void statusMaint();

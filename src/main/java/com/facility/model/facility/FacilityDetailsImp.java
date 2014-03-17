@@ -2,19 +2,19 @@ package com.facility.model.facility;
 
 public class FacilityDetailsImp implements FacilityDetails {
 		private String id;
-		private String facidetail_id;
+		private String fdetailid;
 		private String description;
 		private String note;
 		
 		public FacilityDetailsImp(){
 			
 		}
-	public String getFdetailID() {
-		return facidetail_id;
+	public String getFdetailId() {
+		return fdetailid;
 	}
 
-	public void setFdetailID(String facidetail_id) {
-		this.facidetail_id = facidetail_id;
+	public void setFdetailId(String fdetailid) {
+		this.fdetailid = fdetailid;
 		
 	}
 	public String getDescription() {

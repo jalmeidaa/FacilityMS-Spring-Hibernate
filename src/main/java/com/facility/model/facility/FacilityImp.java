@@ -78,5 +78,19 @@ public  class FacilityImp implements Facility {
 		businessunits.add(businessunit);
 		
 	}
+	public List<Maintenance> getMaintenances() {
+		return maintenances;
+	}
+	public void setMaintenances(List<Maintenance> maintenances) {
+		this.maintenances = maintenances;
+		
+	}
+	public List<BusinessUnit> getBusinessunits() {
+		return businessunits;
+	}
+	public void setBusinessunits(List<BusinessUnit> businessunits) {
+		this.businessunits = businessunits;
+		
+	}
 	
 	}
