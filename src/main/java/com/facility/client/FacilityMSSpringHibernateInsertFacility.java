@@ -25,21 +25,21 @@ public static void main (String args[]) throws Exception {
         facility.setName("Loyola");
         facility.setAddress("Chicago");
         facility.setContact("312-123-4765");
-        facility.setDate("1870");
+        facility.setDate("1870-12-12");
         
         //Spring to inject the right object implementation
         FacilityDetails facilityDetails = facility.getFacilityDetails();
         facilityDetails.setId(facility.getId());
-        facilityDetails.setFdetail_id("LUC123");
+        facilityDetails.setFdetail_id("123");
         facilityDetails.setDescription("University");
         facilityDetails.setNote("Private");
         
         FacilityUse facilityUse = facility.getFacilityUse();
         facilityUse.setId(facility.getId());
-        facilityUse.setFaciuse_id("LUC009");
+        facilityUse.setFaciuse_id("009");
         facilityUse.setPrice("800");
-        facilityUse.setStr_date("August");
-        facilityUse.setEnd_date("September");
+        facilityUse.setStr_date("2013-8-12");
+        facilityUse.setEnd_date("2014-7-12");
         facilityUse.setNote("Contact Office");
                      
         System.out.println("*************** Saving Facility ***********************");
