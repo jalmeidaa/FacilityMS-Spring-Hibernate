@@ -6,7 +6,7 @@
   <groupId>FacilityMS-Spring</groupId>
   <artifactId>com.facility</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <packaging>war</packaging>
+  <packaging>jar</packaging>
 
   <name>FacilityMS-Spring-Hibernate</name>
   <url>http://www.springframework.org</url>
@@ -113,8 +113,6 @@
 		<scope>compile</scope>
 	</dependency>
 </dependencies>
-  
-  
   <build>
     <plugins>
       <plugin>

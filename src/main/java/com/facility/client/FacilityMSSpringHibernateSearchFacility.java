@@ -22,8 +22,8 @@ public class FacilityMSSpringHibernateSearchFacility {
  
         //Find a facility if already exists; if not, create a new one.
         Facility searchedFacility = facilityService.findFacilityById("001"); 
-        System.out.println("Searched customer information .......>>");
-        System.out.println("\tName: \t\t\t" + searchedFacility.getName() + " " + searchedFacility.getAddress() + " " + searchedFacility.getContact() +" " + searchedFacility.getDate() + "\n");
+        System.out.println("Searched facility information .......>>");
+        System.out.println("\tName: \t\t\t" + searchedFacility.getName() + "\n\t\t\t\t" + searchedFacility.getAddress() + "\n\t\t\t\t" + searchedFacility.getContact() +"\n\t\t\t\t" + searchedFacility.getDate() + "\n");
         
         FacilityDetails facDetails = searchedFacility.getFacilityDetails();
         //FacilityDetails facDetails = facilityService.findFacilityDetails(searchedFacility.getId());

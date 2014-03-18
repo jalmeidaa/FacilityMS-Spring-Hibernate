@@ -32,6 +32,6 @@ public class FacilityMSSpringHibernateDeleteFacility {
         
         System.out.println("*************** Facility to be deleted *************************");
 		facilityService.deleteFacility(searchedFacility);
-		System.out.println("*************** Cutomer deleted *************************");
+		System.out.println("*************** Facility deleted *************************");
 }
 }
